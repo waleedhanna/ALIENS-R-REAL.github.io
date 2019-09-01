@@ -1,7 +1,6 @@
 // from data.js
 var tableData = data;
 
-// YOUR CODE HERE!
 // Get references to the tbody element, input field and button
 var $tbody = document.querySelector("tbody");
 var $dateInput = document.querySelector("#dateInput");
@@ -43,7 +42,7 @@ function renderTable() {
   };
   
   function filterState(filteredSighting) {
-    return filteredSighting.state == $stateInput.value.trim().toLowerCase.toUpperCase();
+    return filteredSighting.state == $stateInput.value.trim().toLowerCase();
   };
   
   function filterCountry(filteredSighting) {
@@ -90,3 +89,4 @@ function renderTable() {
   
   // Render the table for the first time on page load
   renderTable();
+  
